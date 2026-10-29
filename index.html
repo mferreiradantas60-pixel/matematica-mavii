@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda divisão de frações com explicações, exemplos, exercícios, quiz e dicas para o ENEM.">
+  <title>Frações sem Mistério | Matemática</title>
+  <style>
+    :root{--navy:#172554;--blue:#3157d5;--sky:#eaf1ff;--purple:#7c3aed;--ink:#202942;--muted:#65708a;--paper:#f7f8fc;--white:#fff;--green:#16845b;--red:#c33d4b;--line:#e2e7f1}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}.hero{background:linear-gradient(135deg,#172554 0%,#2949b7 58%,#7652d8 100%);color:white;padding:26px max(22px,calc((100% - 1120px)/2)) 66px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-weight:850;font-size:1.15rem;letter-spacing:-.03em}.brand span{color:#a9c4ff}nav .links{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem;color:#e4eaff}nav a:hover{text-decoration:underline}
+    .hero-content{max-width:760px;padding-top:62px}.eyebrow{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#c7d5ff}.hero h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.05;letter-spacing:-.055em;margin:14px 0 18px}.hero p{max-width:650px;color:#e3e9ff;font-size:1.1rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 18px;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:750;cursor:pointer;font-size:.95rem;transition:transform .15s,filter .15s}.btn:hover{filter:brightness(1.07);transform:translateY(-1px)}.btn.light{background:#fff;color:var(--navy)}.btn.outline{background:transparent;border:1px solid #cdd7f5;color:var(--navy)}.hero .btn.outline{border-color:#b9c8ff;color:white}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px;margin-top:40px}.stat{background:#ffffff14;border:1px solid #ffffff28;padding:14px 16px;border-radius:15px}.stat strong{display:block;font-size:1.3rem}.stat span{font-size:.82rem;color:#dbe4ff}
+    main{max-width:1120px;margin:auto;padding:0 22px 64px}.section{padding-top:58px;scroll-margin-top:20px}.section-head{max-width:720px;margin-bottom:24px}.section-head .tag{font-size:.76rem;font-weight:850;color:var(--blue);text-transform:uppercase;letter-spacing:.12em}.section h2{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.15;letter-spacing:-.035em;margin:7px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 24px #18254a08}.card h3{margin:0 0 8px;color:var(--navy);font-size:1.1rem}.card p{margin:8px 0;color:var(--muted)}.icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--sky);color:var(--blue);font-size:1.25rem;margin-bottom:14px;font-weight:850}.math{display:inline-flex;align-items:center;gap:5px;font-size:1.1rem;font-weight:800;color:var(--navy);vertical-align:middle}.frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;line-height:1.1;min-width:22px}.frac span:first-child{padding:0 4px 4px;border-bottom:2px solid currentColor}.frac span:last-child{padding:4px 4px 0}.multiply{font-size:1.2rem;color:var(--purple);margin:0 5px}.worked{background:#eef3ff;border-radius:14px;padding:16px;margin-top:12px;color:var(--navy)}.worked b{color:var(--blue)}.callout{border-left:4px solid var(--purple);background:#f2edff;padding:16px 18px;border-radius:0 13px 13px 0;margin-top:18px}.steps{counter-reset:step;display:grid;gap:12px}.step{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--line);border-radius:15px;padding:16px}.step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:11px;background:var(--blue);color:white;font-weight:850}.step p{margin:3px 0 0;color:var(--muted)}
+    .practice{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:18px}.question{padding:17px 0;border-bottom:1px solid var(--line)}.question:last-of-type{border-bottom:0}.question p{font-weight:750;margin:0 0 12px}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.option{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);border-radius:12px;padding:11px 13px;background:#fff;color:var(--ink);cursor:pointer;font:inherit}.option:hover{border-color:#8da4f3;background:#f7f8ff}.option.selected{border-color:var(--blue);background:var(--sky)}.option:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid #ffca66;outline-offset:3px}.option .letter{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:8px;background:#f0f2f8;font-size:.8rem;font-weight:800}.feedback{font-size:.92rem;margin-top:9px;display:none}.feedback.show{display:block}.feedback.good{color:var(--green)}.feedback.bad{color:var(--red)}.quiz-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:20px}.score{font-weight:800;color:var(--navy)}.hint{color:var(--muted);font-size:.9rem}
+    .tips{display:grid;grid-template-columns:1fr 1fr;gap:16px}.tip{display:flex;gap:14px;padding:19px;background:white;border:1px solid var(--line);border-radius:16px}.tip .icon{flex:0 0 42px;margin:0}.tip p{margin:4px 0 0;color:var(--muted)}.final-cta{margin-top:58px;padding:30px;border-radius:22px;background:linear-gradient(120deg,#e8eeff,#f2ebff);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.final-cta h2{margin:0;color:var(--navy)}.final-cta p{margin:7px 0 0;color:var(--muted)}footer{background:#111b3d;color:#dce4ff;padding:28px 22px;text-align:center;font-size:.9rem}footer span{color:#a8bfff}
+    @media(max-width:780px){.grid{grid-template-columns:1fr 1fr}.hero-content{padding-top:42px}.tips{grid-template-columns:1fr}nav .links{gap:12px}}@media(max-width:520px){.grid,.stats,.options{grid-template-columns:1fr}.hero{padding-bottom:46px}.hero-content{padding-top:34px}.section{padding-top:42px}.card{padding:18px}.practice{padding:17px}.stats{gap:8px}.stat{display:flex;align-items:center;justify-content:space-between}.stat strong{font-size:1.1rem}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav aria-label="Navegação principal">
+      <a class="brand" href="#inicio">∑ Frações <span>sem Mistério</span></a>
+      <div class="links">
+        <a href="#aprender">Aprenda</a><a href="#exemplos">Exemplos</a><a href="#exercicios">Exercícios</a><a href="#enem">Dicas ENEM</a>
+      </div>
+    </nav>
+    <div class="hero-content" id="inicio">
+      <div class="eyebrow">Matemática • do básico ao ENEM</div>
+      <h1>Dividir frações pode ser mais fácil do que parece.</h1>
+      <p>Aprenda a regra, veja exemplos resolvidos e pratique com exercícios interativos. Um passo de cada vez, sem complicação.</p>
+      <div class="hero-actions">
+        <a class="btn light" href="#aprender">Começar a aprender ↓</a>
+        <a class="btn outline" href="#quiz">Ir direto ao quiz</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>01 regra</strong><span>para guardar</span></div>
+        <div class="stat"><strong>Passo a passo</strong><span>com exemplos</span></div>
+        <div class="stat"><strong>Prática</strong><span>com correção</span></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section" id="aprender">
+      <div class="section-head"><div class="tag">01 • Entenda a ideia</div><h2>Como dividir frações?</h2><p>Na divisão de frações, mantemos a primeira fração e multiplicamos pelo inverso da segunda. Depois, simplificamos o resultado quando for possível.</p></div>
+      <div class="grid">
+        <article class="card"><div class="icon">↔</div><h3>1. Repita a primeira</h3><p>A primeira fração continua exatamente como está.</p><div class="worked"><span class="math"><span class="frac"><span>2</span><span>3</span></span></span> ÷ <span class="math"><span class="frac"><span>4</span><span>5</span></span></span></div></article>
+        <article class="card"><div class="icon">⤾</div><h3>2. Inverta a segunda</h3><p>Troque o numerador pelo denominador da segunda fração.</p><div class="worked"><span class="math"><span class="frac"><span>2</span><span>3</span></span></span> × <span class="math"><span class="frac"><span>5</span><span>4</span></span></span></div></article>
+        <article class="card"><div class="icon">✓</div><h3>3. Multiplique e simplifique</h3><p>Multiplique numerador por numerador e denominador por denominador.</p><div class="worked"><span class="math"><span class="frac"><span>10</span><span>12</span></span></span> = <b>5/6</b></div></article>
+      </div>
+      <div class="callout"><strong>Regra de ouro:</strong> dividir pela segunda fração é o mesmo que multiplicar pelo inverso dela. A segunda fração não pode ser zero.</div>
+    </section>
+    <section class="section" id="exemplos">
+      <div class="section-head"><div class="tag">02 • Veja na prática</div><h2>Exemplos resolvidos</h2><p>Acompanhe o raciocínio em cada conta.</p></div>
+      <div class="grid">
+        <article class="card"><h3>Exemplo 1 — básico</h3><div class="worked"><span class="math"><span class="frac"><span>1</span><span>2</span></span></span> ÷ <span class="math"><span class="frac"><span>3</span><span>4</span></span></span><br><br>= <span class="math"><span class="frac"><span>1</span><span>2</span></span></span> × <span class="math"><span class="frac"><span>4</span><span>3</span></span></span><br><br>= <span class="math"><span class="frac"><span>4</span><span>6</span></span></span> = <b>2/3</b></div><p>Invertimos 3/4 e simplificamos 4/6 por 2.</p></article>
+        <article class="card"><h3>Exemplo 2 — simplifique</h3><div class="worked"><span class="math"><span class="frac"><span>3</span><span>5</span></span></span> ÷ <span class="math"><span class="frac"><span>9</span><span>10</span></span></span><br><br>= <span class="math"><span class="frac"><span>3</span><span>5</span></span></span> × <span class="math"><span class="frac"><span>10</span><span>9</span></span></span><br><br>= <span class="math"><span class="frac"><span>30</span><span>45</span></span></span> = <b>2/3</b></div><p>Divida o numerador e o denominador por 15.</p></article>
+        <article class="card"><h3>Exemplo 3 — número inteiro</h3><div class="worked">2 ÷ <span class="math"><span class="frac"><span>3</span><span>4</span></span></span><br><br>= <span class="math"><span class="frac"><span>2</span><span>1</span></span></span> × <span class="math"><span class="frac"><span>4</span><span>3</span></span></span><br><br>= <b>8/3</b> = 2⅔</div><p>Escreva o número inteiro como uma fração com denominador 1.</p></article>
+      </div>
+    </section>
+    <section class="section" id="exercicios">
+      <div class="section-head"><div class="tag">03 • Treine</div><h2>Exercícios com correção</h2><p>Escolha uma alternativa em cada questão e clique em “Corrigir exercícios” para conferir seu resultado.</p></div>
+      <div class="practice" id="practice">
+        <div class="question" data-answer="B" data-explain="Invertemos 2/3 para 3/2: 1/4 × 3/2 = 3/8.">
+          <p>1. Quanto é 1/4 ÷ 2/3?</p>
+          <div class="options"><button class="option" data-value="A"><span class="letter">A</span> 2/12</button><button class="option" data-value="B"><span class="letter">B</span> 3/8</button><button class="option" data-value="C"><span class="letter">C</span> 8/3</button><button class="option" data-value="D"><span class="letter">D</span> 1/6</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="C" data-explain="Invertemos 5/6 para 6/5: 2/5 × 6/5 = 12/25.">
+          <p>2. Resolva 2/5 ÷ 5/6.</p>
+          <div class="options"><button class="option" data-value="A"><span class="letter">A</span> 10/30</button><button class="option" data-value="B"><span class="letter">B</span> 25/12</button><button class="option" data-value="C"><span class="letter">C</span> 12/25</button><button class="option" data-value="D"><span class="letter">D</span> 7/11</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="A" data-explain="Transforme 3 em 3/1: 3/1 ÷ 9/4 = 3/1 × 4/9 = 12/9 = 4/3.">
+          <p>3. Quanto é 3 ÷ 9/4?</p>
+          <div class="options"><button class="option" data-value="A"><span class="letter">A</span> 4/3</button><button class="option" data-value="B"><span class="letter">B</span> 27/4</button><button class="option" data-value="C"><span class="letter">C</span> 3/4</button><button class="option" data-value="D"><span class="letter">D</span> 9/12</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="quiz-controls"><button class="btn" id="correctExercises">Corrigir exercícios</button><button class="btn outline" id="resetExercises">Refazer</button><span class="score" id="exerciseScore" aria-live="polite"></span></div>
+      </div>
+    </section>
+    <section class="section" id="quiz">
+      <div class="section-head"><div class="tag">04 • Desafio rápido</div><h2>Quiz: teste o que aprendeu</h2><p>São 5 perguntas. Marque uma opção em cada questão para ver sua pontuação e as explicações.</p></div>
+      <div class="practice" id="quizBox">
+        <div class="question" data-answer="C" data-explain="Para dividir, multiplique pela segunda fração invertida: 2/7 × 3/1 = 6/7.">
+          <p>1. Qual é o resultado de 2/7 ÷ 1/3?</p><div class="options"><button class="option" data-value="A"><span class="letter">A</span> 2/21</button><button class="option" data-value="B"><span class="letter">B</span> 3/14</button><button class="option" data-value="C"><span class="letter">C</span> 6/7</button><button class="option" data-value="D"><span class="letter">D</span> 7/6</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="A" data-explain="O inverso de 4/9 é 9/4. Assim, 3/8 × 9/4 = 27/32.">
+          <p>2. Qual é o inverso de 4/9?</p><div class="options"><button class="option" data-value="A"><span class="letter">A</span> 9/4</button><button class="option" data-value="B"><span class="letter">B</span> 4/9</button><button class="option" data-value="C"><span class="letter">C</span> 5/9</button><button class="option" data-value="D"><span class="letter">D</span> 9/5</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="D" data-explain="5/6 × 3/10 = 15/60 = 1/4.">
+          <p>3. Resolva 5/6 ÷ 10/3.</p><div class="options"><button class="option" data-value="A"><span class="letter">A</span> 50/18</button><button class="option" data-value="B"><span class="letter">B</span> 2/5</button><button class="option" data-value="C"><span class="letter">C</span> 1/2</button><button class="option" data-value="D"><span class="letter">D</span> 1/4</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="B" data-explain="5/8 × 4/15 = 20/120 = 1/6.">
+          <p>4. Quanto é 5/8 ÷ 15/4?</p><div class="options"><button class="option" data-value="A"><span class="letter">A</span> 3/2</button><button class="option" data-value="B"><span class="letter">B</span> 1/6</button><button class="option" data-value="C"><span class="letter">C</span> 75/32</button><button class="option" data-value="D"><span class="letter">D</span> 5/30</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question" data-answer="C" data-explain="Dividir por zero não é definido. Não existe fração inversa de zero.">
+          <p>5. Qual divisão não está definida?</p><div class="options"><button class="option" data-value="A"><span class="letter">A</span> 1/2 ÷ 3/4</button><button class="option" data-value="B"><span class="letter">B</span> 3 ÷ 2/5</button><button class="option" data-value="C"><span class="letter">C</span> 2/3 ÷ 0</button><button class="option" data-value="D"><span class="letter">D</span> 4/5 ÷ 1/2</button></div><div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="quiz-controls"><button class="btn" id="submitQuiz">Ver minha pontuação</button><button class="btn outline" id="resetQuiz">Tentar novamente</button><span class="score" id="quizScore" aria-live="polite"></span></div>
+        <p class="hint">Dica: se travar, volte à regra e escreva a segunda fração invertida antes de multiplicar.</p>
+      </div>
+    </section>
+    <section class="section" id="enem">
+      <div class="section-head"><div class="tag">05 • Estratégia de prova</div><h2>Dicas para o ENEM</h2><p>Frações podem aparecer em questões contextualizadas. Mais importante do que decorar é entender o que a situação pede.</p></div>
+      <div class="tips">
+        <article class="tip"><div class="icon">🔎</div><div><h3>Leia o contexto com atenção</h3><p>Identifique o que está sendo dividido e quais são as unidades. Em problemas de receita, escala ou medidas, anote os dados antes de calcular.</p></div></article>
+        <article class="tip"><div class="icon">✍️</div><div><h3>Traduza o texto para uma conta</h3><p>Expressões como “quantos grupos cabem?” ou “quanto corresponde a cada parte?” podem indicar uma divisão, dependendo do contexto.</p></div></article>
+        <article class="tip"><div class="icon">⚡</div><div><h3>Use o inverso e simplifique</h3><p>Transforme a divisão em multiplicação pelo inverso. Quando der, simplifique antes de multiplicar para reduzir as contas.</p></div></article>
+        <article class="tip"><div class="icon">✓</div><div><h3>Confira se o resultado faz sentido</h3><p>Estime o valor e confira as unidades. Se você divide uma quantidade positiva por uma fração menor que 1, o resultado será maior que a quantidade inicial.</p></div></article>
+      </div>
+      <div class="callout"><strong>Erro comum:</strong> inverter as duas frações. Inverta somente a segunda fração e, depois, multiplique.</div>
+    </section>
+    <div class="final-cta"><div><h2>Você consegue dominar essa regra!</h2><p>Revise os exemplos e faça os exercícios até se sentir seguro.</p></div><a class="btn" href="#quiz">Fazer o quiz novamente ↑</a></div>
+  </main>
+  <footer>Feito para estudar matemática com mais confiança. <span>• Frações sem Mistério</span></footer>
+  <script>
+    function setupPractice(containerId, scoreId, buttonId, resetId, label) {
+      const box = document.getElementById(containerId);
+      const questions = [...box.querySelectorAll('.question')];
+      questions.forEach(question => {
+        question.querySelectorAll('.option').forEach(option => {
+          option.addEventListener('click', () => {
+            question.querySelectorAll('.option').forEach(btn => {
+              btn.classList.remove('selected');
+              btn.setAttribute('aria-pressed', 'false');
+            });
+            option.classList.add('selected');
+            option.setAttribute('aria-pressed', 'true');
+            question.querySelector('.feedback').className = 'feedback';
+            question.querySelector('.feedback').textContent = '';
+          });
+        });
+      });
+      document.getElementById(buttonId).addEventListener('click', () => {
+        let score = 0, answered = 0;
+        questions.forEach(question => {
+          const chosen = question.querySelector('.option.selected');
+          const feedback = question.querySelector('.feedback');
+          feedback.className = 'feedback show';
+          if (!chosen) {
+            feedback.classList.add('bad');
+            feedback.textContent = 'Escolha uma alternativa para responder.';
+            return;
+          }
+          answered++;
+          const correct = chosen.dataset.value === question.dataset.answer;
+          if (correct) score++;
+          feedback.classList.add(correct ? 'good' : 'bad');
+          feedback.textContent = (correct ? 'Muito bem! ' : 'Ainda não. ') + question.dataset.explain;
+        });
+        document.getElementById(scoreId).textContent = `${label}: ${score}/${questions.length} • ${answered} respondida(s)`;
+      });
+      document.getElementById(resetId).addEventListener('click', () => {
+        questions.forEach(question => {
+          question.querySelectorAll('.option').forEach(btn => {
+            btn.classList.remove('selected');
+            btn.setAttribute('aria-pressed', 'false');
+          });
+          const feedback = question.querySelector('.feedback');
+          feedback.className = 'feedback';
+          feedback.textContent = '';
+        });
+        document.getElementById(scoreId).textContent = '';
+      });
+    }
+    setupPractice('practice', 'exerciseScore', 'correctExercises', 'resetExercises', 'Resultado');
+    setupPractice('quizBox', 'quizScore', 'submitQuiz', 'resetQuiz', 'Pontuação');
+  </script>
+</body>
+</html>
+'''
+
